@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px;
+    gap: 80px;
+    background-color: #1C1C1C;
+    text-shadow: 1px black;
+    font-family: 'Karla', sans-serif;
+}
+.container {
+    height: 550px;
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    background-color: #1F2937;
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 115px 0px 0px 52px;
+}
+
+h2 {
+    padding-left: 52px;
+    padding-bottom: 51px;
+    font-size: large;
+}
+
+.buttons {
+  
+    margin-left: 52px;
+    margin-right: 307px;
+    margin-bottom: 35px;
+    padding: 10px 0;
+    background-color: #10B981;
+    color: #ffffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    
+}
+
+.password-display-container {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 52px;
+    padding-top: 35px;
+    color: #E5E7EB;
+    width: 446px;
+    border-top: 1px solid #2F3E53;
+
+}
+
+.password-display {
+    color: #55F991;
+    background-color: #273549;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+.white-color {
+    color: white;
+    font-size: 40px;
+    margin: 0;
+    font-weight: 800;
+}
+
+.greenish-color {
+    color: #4ADF86;
+   
+    font-size: 40px;
+    margin: 0;
+    font-weight: 800;
+}
+
+.medium-grey-color {
+    color: #9CA3AF;
+    font-family: 'Karla', sans-serif;
+    font-size: 19px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-weight: 400;
+    line-height: 24px;
+    width: 350px;
+}
