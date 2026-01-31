@@ -1,38 +1,45 @@
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-         <div class="container">
-            <div class="title-container">
-                <h1 class="white-color">Generate a</h1> <h1 class="greenish-color">random password</h1>
+        <div class="main-container">
+            <div class="container">
+                    <div class="title">
+                        <h1 class="white-color">Generate a</h1>
+                        <h1 class="greenish-color">random password</h1>
+                    </div>
+                        <h2 class="medium-grey-color">Never use an insecure password again.</h2>
+                        <button class="buttons" onclick="generatePasswordOne()">Generate Passwords</button>
+                    <div class="password-display-container">
+                        <div class="password-display">
+                            <span id="password-display-1"></span>
+                        </div>
+                        <div class="password-display">
+                            <span id="password-display-2"></span>
+                        </div>  
+                    </div>
             </div>
-                <h2 class="medium-grey-color">Never use an insecure password again.</h2>
-                <button class="buttons" onclick="generatePasswordOne()">Generate Passwords</button>
-            <div class="password-display-container">
-                <div class="password-display">
-                    <div id="password-display-1">Here is the password</div>
-                </div>
-                <div class="password-display">   
-                    <div id="password-display-2">Here is the password</div>
-                </div> 
-            </div>
-        </div>
 
 
-        <div class="container">
-            <div class="title-container">
-                  <h1 class="white-color">Generate a</h1> <h1 class="greenish-color">random password</h1>
-                    
+            <div class="container">
+                    <div class="title">
+                        <h1 class="white-color">Generate a</h1>
+                        <h1 class="greenish-color">random password</h1>
+                    </div>
+                        <h2 class="medium-grey-color">Never use an insecure password again.</h2>
+                        <button class="buttons" onclick="generatePasswordTwo()">Generate Passwords</button>
+                    <div class="password-display-container">
+                        <div class="password-display">
+                            <span id="password-display-3"></span>
+                        </div>
+                        <div class="password-display">
+                            <span id="password-display-4"></span>
+                        </div> 
+                    </div>
             </div>
-                <h2 class="medium-grey-color">Never use an insecure password again.</h2>
-                <button class="buttons" onclick="generatePasswordTwo()">Generate Passwords</button>
-            <div class="password-display-container">
-                <div id="password-display-3" class="password-display">Here is the password</div>
-                <div id="password-display-4" class="password-display">Here is the password</div>
-            </div>
-         </div>
-            
+        </div> 
 
 
         <script src="index.js"></script>
