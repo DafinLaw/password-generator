@@ -58,8 +58,12 @@ h2 {
 .password-display {
     color: #55F991;
     background-color: #273549;
-    padding: 10px 20px;
     border-radius: 4px;
+}
+
+#password-display-1, #password-display-2, #password-display-3, #password-display-4 {
+    padding:10px 20px;
+    color:#55F991
 }
 
 .white-color {
