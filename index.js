@@ -3,10 +3,14 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
 
 let passwordLength = 15
 
-let passwordOneEl = document.getElementById("password-display-1").style.visibility = "hidden"
-let passwordTwoEl = document.getElementById("password-display-2").style.visibility = "hidden"
-let passwordThreeEl = document.getElementById("password-display-3")
-let passwordFourEl = document.getElementById("password-display-4")
+
+let passwordOneEl = document.getElementById("password-display-1")
+let passwordTwoEl = document.getElementById("password-display-2")
+let copyButton1 = document.getElementById("copy-button-1")
+let copyButton2 = document.getElementById("copy-button-2")
+
+
+
 
 function generatePasswordOne() {
     let password1 = ""
@@ -25,19 +29,26 @@ function generatePasswordOne() {
 
 }
 
-function generatePasswordTwo() {
-    let password3 = ""
-    let password4 = ""
-
-    for (let i = 0; i < passwordLength; i++) {
-        let randomIndex3 = Math.floor(Math.random() * characters.length)
-        let randomIndex4 = Math.floor(Math.random() * characters.length)
-
-        password3 += characters[randomIndex3]
-        password4 += characters[randomIndex4]
+copyButton1.addEventListener("click", async() => {
+    try {
+        await navigator.clipboard.writeText(passwordOneEl.textContent);
+        copyButton1.style.scale = "1.1";
+        setTimeout(() => {
+            copyButton1.style.scale = "1.12";
+        }, 2000);
+    } catch (err) {
+        console.error("Failed to copy password:", err);
     }
+});
 
-    passwordThreeEl.textContent = password3
-    passwordFourEl.textContent = password4
-
-}
+copyButton2.addEventListener("click", async() => {
+    try {
+        await navigator.clipboard.writeText(passwordTwoEl.textContent);
+        copyButton2.style.scale = "1.1";
+        setTimeout(() => {
+            copyButton2.style.scale = "1.12";
+        }, 2000);
+    } catch (err) {
+        console.error("Failed to copy password:", err);
+    }
+});

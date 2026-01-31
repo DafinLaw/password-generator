@@ -12,6 +12,7 @@ body {
 .main-container {
     padding: clamp(24px, 5vw, 52px);
     padding-top: clamp(64px, 10vw, 115px);
+    padding-bottom: clamp(64px, 10vw, 115px);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -43,6 +44,7 @@ h1 {
 }
 
 h2 {
+    font-size: 1rem;
     margin-bottom: 2.5rem;
 }
 
@@ -58,6 +60,26 @@ h2 {
     margin-bottom: 2.5rem;
 }
 
+.copy-btn {
+    width: 24px;
+    height: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    background-image: url("copy.png"); /* or inline SVG later */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-left: 4px;
+}
+
+.password-display.empty .copy-btn {
+    opacity: 0;
+    pointer-events: none;
+}
+
+
 .password-display-container {
     display: flex;
     flex-direction: row;
@@ -71,14 +93,25 @@ h2 {
 .password-display {
     background-color: #273549;
     color: #55F991;
-    padding: 10px 30px;
+    padding: 10px 10px 10px 25px;
     margin: 0 1px;
     border-radius: 8px;
     text-align: center;
 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
     min-width: 200px;
     min-height: 39px;
 }
+
+.password-text {
+    margin: 0;
+    font-size: 0.95rem;
+    overflow-wrap: anywhere;
+}
+
 
 .white-color {
     color: #FFFFFF;
