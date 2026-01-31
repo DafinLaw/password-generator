@@ -10,7 +10,7 @@ The project is still on going, so far only the design part is done.
 
 Future stretch goals:
 - ability to set password length;
-- copy "on-click" feature;
+- copy "on-click" feature; ✔️
 - toggle "symbols" and "numbers" on/off
 
 Here is the live demo link: https://dafinlaw.github.io/password-generator/
