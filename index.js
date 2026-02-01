@@ -44,22 +44,17 @@ function generatePassword() {
         return;
     }
     let password = ""
-    //let password1 = ""
-    //let password2 = ""
+   
 
     for (let i = 0; i < passwordLength; i++) {
         let randomIndex = Math.floor(Math.random() * pool.length)
-        //let randomIndex1 = Math.floor(Math.random() * pool.length)
-        //let randomIndex2 = Math.floor(Math.random() * pool.length)
+       
     
         
         password += pool[randomIndex]
-        //password1 += pool[randomIndex1]
-        //password2 += pool[randomIndex2]
+      
     }
 
-    //passwordOneEl.textContent = password1;
-    //passwordTwoEl.textContent = password2;
     return password;
 };
 
