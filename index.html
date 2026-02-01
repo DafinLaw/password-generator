@@ -2,6 +2,7 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="index.css">
+        <title>Password Generator</title>
     </head>
     <body>
         <div class="main-container">
@@ -13,7 +14,31 @@
                         <h1 class="greenish-color">random password</h1>
                     </div>
                         <h2 class="medium-grey-color">Never use an insecure password again.</h2>
-                        <button class="buttons" onclick="generatePasswordOne()">Generate Passwords</button>
+                        <div class="options-container">
+                            <button class="buttons" id="generate-btn">Generate Passwords</button>
+                                <div class="checkbox-options">
+                                    <label class="option">
+                                        <input type="checkbox" id="uppercase" checked />
+                                        <span class="custom-checkbox"></span>
+                                            Uppercase
+                                    </label>
+                                    <label class="option">
+                                        <input type="checkbox" id="lowercase" checked>
+                                        <span class="custom-checkbox"></span>
+                                                Lowercase
+                                    </label>
+                                    <label class="option">
+                                        <input type="checkbox" id="numbers" checked>
+                                        <span class="custom-checkbox"></span>
+                                                Numbers
+                                    </label>
+                                    <label class="option">
+                                        <input type="checkbox" id="symbols" checked>
+                                        <span class="custom-checkbox"></span>
+                                                Symbols
+                                    </label>
+                                </div>
+                        </div>
                         <label class="length-control">
                             Length:
                             <span id="length-value">15</span>

@@ -7,6 +7,7 @@ body {
     margin: 0;
     background-color: #1c1c1c;
     font-family: "Karla", sans-serif;
+    text-shadow: 0 0 1px black;
 }
 
 .main-container {
@@ -30,6 +31,25 @@ body {
     text-align: start;
     padding: 2.5rem;
     padding-bottom: 3rem;
+}
+
+.options-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    
+}
+
+.checkbox-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem 1.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.7rem;
+    border-top : 1px solid #2F3E53;
+    padding-top: 1rem;
+    width: 100%;
 }
 
 .title {
@@ -57,7 +77,7 @@ h2 {
     font-weight: 600;
     cursor: pointer;
     border-radius: 8px;
-    margin-bottom: 2.5rem;
+
 }
 
 .copy-btn {
@@ -72,6 +92,46 @@ h2 {
     background-position: center;
     background-size: contain;
     margin-left: 4px;
+}
+
+.option input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  color: #d6d6d8;
+  font-size: 0.95rem;
+  user-select: none;
+  margin-bottom: 0.2rem;
+}
+
+.custom-checkbox {
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  border: 2px solid #4b5563;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.option input:checked + .custom-checkbox {
+  background-color: #10b981;
+  border-color: #10b981;
+}
+
+.option input:checked + .custom-checkbox::after {
+  content: "✓";
+  color: #0f172a;
+  font-size: 0.8rem;
+  font-weight: bold;
 }
 
 .length-control {
