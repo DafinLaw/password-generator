@@ -14,6 +14,17 @@
                     </div>
                         <h2 class="medium-grey-color">Never use an insecure password again.</h2>
                         <button class="buttons" onclick="generatePasswordOne()">Generate Passwords</button>
+                        <label class="length-control">
+                            Length:
+                            <span id="length-value">15</span>
+                        </label>
+                            <input 
+                                type="range"
+                                min="6"
+                                max="32"
+                                value="15"
+                                id="password-length"
+                            />
                     <div class="password-display-container">
                         <div class="password-display">
                             <p class="password-text" id="password-display-1"></p>

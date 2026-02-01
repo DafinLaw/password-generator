@@ -1,13 +1,20 @@
 const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9","~","`","!","@","#","$","%","^","&","*","(",")","_","-","+","=","{","[","}","]",",","|",":",";","<",">",".","?",
 "/"];
 
-let passwordLength = 15
+
 
 
 let passwordOneEl = document.getElementById("password-display-1")
 let passwordTwoEl = document.getElementById("password-display-2")
 let copyButton1 = document.getElementById("copy-button-1")
 let copyButton2 = document.getElementById("copy-button-2")
+const slider = document.getElementById("password-length")
+let passwordLength = slider.value 
+
+slider.addEventListener("input", function() {
+    passwordLength = slider.value
+    document.getElementById("length-value").textContent = passwordLength
+});
 
 
 
